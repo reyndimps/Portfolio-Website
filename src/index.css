@@ -28,3 +28,29 @@
         hsla(242, 74%, 61%, 0.8)   
     )!important;
 }
+
+.typing {
+    overflow: hidden; /* Hides the text until width increases */
+    white-space: nowrap; /* Prevents text from wrapping to next line */
+    border-right: 3px solid currentColor; /* The typing cursor */
+    display: inline-block; /* Necessary for the width animation to work */
+    vertical-align: bottom; /* Aligns the typing text with the static text */
+    width: 0;
+    /* steps(14) makes it look like it's being typed character by character */
+    animation: 
+        typing 3.5s steps(14, end) infinite, 
+        blink 0.8s infinite;
+}
+
+/* Controls the typing and deleting cycle */
+@keyframes typing {
+    0% { width: 0 }               /* Start empty */
+    50% { width: 13ch }           /* Type out (14ch = 14 characters wide) */
+    70% { width: 13ch }           /* Stay typed out (pause) */
+    100% { width: 0 }             /* Delete back to empty */
+}
+
+/* Makes the cursor blink */
+@keyframes blink {
+    53% { border-color: transparent }
+}

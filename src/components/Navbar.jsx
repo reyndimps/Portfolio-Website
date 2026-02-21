@@ -9,22 +9,24 @@ import {
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logoa.png';
 import { Link } from 'react-scroll';
+import Resume from '../assets/certificates/resume.pdf';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
-        <img src={Logo} alt='Logo Image' style={{ width: '200px' }} />
-      </div>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 bg-[#0B1120] text-gray-300 z-50'>
+      
+      <a href='/' className='cursor-pointer'>
+        <img src={Logo} alt='Logo Image' style={{ width: '110px' }}/>
+      </a>
 
       {/* menu */}
-      <ul className='hidden md:flex'>
-        <li>
+      <ul className='hidden md:flex text-lg font-semibold'>
+        <li className=' hover:border-gray-700 transition-all duration-300'>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
@@ -41,7 +43,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to='work' smooth={true} duration={500}>
-            Work
+            Works
           </Link>
         </li>
         <li>
@@ -84,7 +86,7 @@ const Navbar = () => {
         <li className='py-6 text-4xl'>
           {' '}
           <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-            Work
+            Works
           </Link>
         </li>
         <li className='py-6 text-4xl'>
@@ -99,33 +101,34 @@ const Navbar = () => {
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
+            <a target="_blank"
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://www.linkedin.com/in/reynaldo-jr-domingo-20049334a/'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-            <a
+            <a target="_blank"
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='https://github.com/reyndimps'
             >
               Github <FaGithub size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
+            <a 
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href='mailto:reyndoming@gmail.com'
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-            <a
+            <a 
               className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              href={Resume} 
+              download='resume.pdf'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
