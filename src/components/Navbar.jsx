@@ -4,8 +4,6 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -21,7 +19,7 @@ const Navbar = () => {
     <div className='fixed w-full h-[80px] flex justify-between items-center px-10 bg-[#0B1120] text-gray-300 z-50'>
       
       <a href='/' className='cursor-pointer'>
-        <img src={Logo} alt='Logo Image' style={{ width: '110px' }}/>
+        <img src={Logo} alt='Logo' style={{ width: '110px' }}/>
       </a>
 
       {/* menu */}
@@ -102,6 +100,7 @@ const Navbar = () => {
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a target="_blank"
+              rel='noreferrer'
               className='flex justify-between items-center w-full text-gray-300'
               href='https://www.linkedin.com/in/reynaldo-jr-domingo-20049334a/'
             >
@@ -110,6 +109,7 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a target="_blank"
+              rel='noreferrer'
               className='flex justify-between items-center w-full text-gray-300'
               href='https://github.com/reyndimps'
             >
