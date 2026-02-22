@@ -75,7 +75,7 @@ const Work = () => {
                     href={item.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:text-cyan-300 transition-colors duration-200"
+                    className="inline-flex items-center gap-1.5 text-xs text-white hover:text-cyan-400 transition-colors duration-200"
                   >
                     <FaGithub size={14} />
                     View on GitHub
@@ -88,7 +88,7 @@ const Work = () => {
         </div>
       </div>
     </div>
-  );
+  );  
 };
 
 export default Work;

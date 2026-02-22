@@ -38,7 +38,7 @@ const Contact = () => {
                 </div>
                 
                 <div className='space-y-4'>
-                    <a href="mailto:reyndoming@gmail.com" className='bg-[#11161D] border border-gray-800 p-6 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
+                    <a href="mailto:reyndoming@gmail.com" className='bg-[#11161D] border border-gray-800 p-4 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
                         <div className='flex items-center gap-4'>
                             <div className='w-12 h-12 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
                                 <FiMail className='text-gray-400 text-xl group-hover:text-white transition-colors' />
@@ -51,7 +51,7 @@ const Contact = () => {
                         <FiArrowUpRight className='text-gray-600 text-xl group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300' />
                     </a>
 
-                    <a href="tel:09104673672" className='bg-[#11161D] border border-gray-800 p-6 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
+                    <a href="tel:09104673672" className='bg-[#11161D] border border-gray-800 p-4 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
                         <div className='flex items-center gap-4'>
                             <div className='w-12 h-12 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
                                 <FiPhone className='text-gray-400 text-xl group-hover:text-white transition-colors' />
@@ -64,7 +64,7 @@ const Contact = () => {
                         <FiArrowUpRight className='text-gray-600 text-xl group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300' />
                     </a>
 
-                    <a href="https://www.google.com/maps/search/?api=1&query=Crosby+Street,+NY,+US" target="_blank" rel="noreferrer" className='bg-[#11161D] border border-gray-800 p-6 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Crosby+Street,+NY,+US" target="_blank" rel="noreferrer" className='bg-[#11161D] border border-gray-800 p-4 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
                         <div className='flex items-center gap-4'>
                             <div className='w-12 h-12 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
                                 <FiMapPin className='text-gray-400 text-xl group-hover:text-white transition-colors' />
@@ -97,9 +97,9 @@ const Contact = () => {
                     </div>
                     <div className='flex flex-col'>
                         <label className='text-gray-500 text-xs font-semibold uppercase tracking-widest mb-2 ml-1'>Message</label>
-                        <textarea className='bg-transparent border border-gray-800 p-4 rounded-xl text-white focus:outline-none focus:border-gray-600 transition-all duration-300 resize-none placeholder:text-gray-700' name="message" rows="6" placeholder='What do you have in mind?' required></textarea>
+                        <textarea className='bg-transparent border border-gray-800 p-4 rounded-xl text-white focus:outline-none focus:border-gray-600 transition-all duration-300 resize-none placeholder:text-gray-700' name="message" rows="5" placeholder='What do you have in mind?' required></textarea>
                     </div>
-                    <button type="submit" className='w-full bg-white text-black font-bold py-4 rounded-xl hover:bg-gray-200 transition-colors duration-300 active:scale-[0.98] shadow-lg shadow-white/5'>Submit Message</button>
+                    <button type="submit" className='w-full bg-white text-black font-bold py-4 rounded-xl hover:bg-gray-200 hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-xl hover:shadow-white/10 transition-all duration-300 ease-out active:scale-[0.98] shadow-lg shadow-white/5'>Submit Message</button>
                 </form>
             </div>
         </div>

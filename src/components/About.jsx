@@ -9,7 +9,7 @@ const About = () => {
           <div
             key={i}
             className="absolute rounded-full bg-white animate-pulse"
-            style={{
+            style={{  
               width: `${Math.random() * 2.5 + 1}px`,
               height: `${Math.random() * 2.5 + 1}px`,
               top: `${Math.random() * 100}%`,
