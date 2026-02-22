@@ -70,7 +70,7 @@ const Contact = () => {
                                 <FiMapPin className='text-gray-400 text-xl group-hover:text-white transition-colors' />
                             </div>
                             <div>
-                                <p className='text-gray-500 text-sm'>Our location</p>
+                                <p className='text-gray-500 text-sm'>My location</p>
                                 <p className='text-white font-medium'>Deca Homes, Mintal, Davao City, Davao Del Sur</p>
                             </div>
                         </div>
