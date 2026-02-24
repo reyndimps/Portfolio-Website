@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   return (
     <div name='about' className='w-full h-screen bg-[#0B1120] text-gray-300 relative overflow-hidden'>
