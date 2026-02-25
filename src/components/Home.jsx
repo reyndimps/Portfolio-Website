@@ -31,7 +31,7 @@ const Home = () => {
       </div>
       
       {/* Container */}
-      <div className='max-w-7xl mx-auto grid md:grid-cols-2 items-center w-full px-8 pt-24 md:pt-0'>
+      <div className='max-w-7xl mx-auto grid md:grid-cols-2 items-center w-full px-4 pt-24 md:pt-0'>
         {/* Text Content */}
         <div
           ref={textAnim.ref}

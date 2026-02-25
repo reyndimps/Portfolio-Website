@@ -9,7 +9,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logoa.png';
 import { Link } from 'react-scroll';
-import Resume from '../assets/certificates/resume.pdf';
+import Resume from '../assets/certificates/Resume.pdf';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -139,7 +139,7 @@ const Navbar = () => {
             <a 
               className='flex justify-between items-center w-full text-gray-300'
               href={Resume} 
-              download='resume.pdf'
+              download='Resume.pdf'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
