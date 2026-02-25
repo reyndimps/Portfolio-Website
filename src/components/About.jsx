@@ -70,10 +70,10 @@ const About = () => {
                       className="relative w-80 h-80 mx-auto opacity-0" 
                       style={fadeInStyle}
                     >
-                      <div className='absolute -top-24 -left-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform -rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
+                      <div className='absolute -top-24 left-0 lg:-left-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform lg:-rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
                         <img src={About2} alt="Reynaldo Domingo" className="w-full h-full object-cover rounded-2xl"/>
                       </div>
-                      <div className='absolute -bottom-24 -right-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
+                      <div className='absolute -bottom-24 right-0 lg:-right-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform lg:rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
                         <img src={About3} alt="Reynaldo Domingo" className="w-full h-full object-cover rounded-2xl"/>
                       </div>
                       <div className='absolute top-1/2 left-1/2 w-64 h-64 transform -translate-x-1/2 -translate-y-1/2 bg-[#1a2238] border-2 border-cyan-500 rounded-2xl shadow-2xl shadow-cyan-500/20 z-10 transition-all duration-500 ease-out hover:scale-110 cursor-pointer group' onClick={toggleImageView}>
@@ -99,7 +99,7 @@ const About = () => {
                   </div>
 
                   <div className='text-4xl font-bold mb-6'>
-                    <p className='text-cyan-500'>Hello there, I'm Rey,</p>
+                    <p className='text-cyan-500'>Hello there, <span className='text-nowrap'>I'm Rey,</span></p>
                     <p className='text-white'>It's a Pleasure to meet you.</p>
                     <p className='text-[#8892b0]'>Please take a look around.</p>
                   </div>

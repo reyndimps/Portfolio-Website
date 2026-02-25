@@ -45,7 +45,7 @@ const Work = () => {
         {/* container for projects */}
         <div
           ref={gridAnim.ref}
-          className="grid sm:grid-cols-2 md:grid-cols-4 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
           {project.map((item, index) => (
             <div
