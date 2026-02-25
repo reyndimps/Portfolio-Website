@@ -1,9 +1,12 @@
 import React from 'react';
 import { data } from "../data/data.js";
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Work = () => {
     const project = data;
+    const headerAnim = useScrollAnimation({ threshold: 0.3 });
+    const gridAnim = useScrollAnimation({ threshold: 0.1 });
   
   return (
     <div name='work' className='w-full text-gray-300 bg-[#0B1120] py-20 relative overflow-hidden'>
@@ -27,7 +30,10 @@ const Work = () => {
       </div>
 
       <div className='max-w-7xl mx-auto p-4 mt-7 flex flex-col justify-center w-full h-full relative z-10'>
-        <div className='pb-8'>
+        <div
+          ref={headerAnim.ref}
+          className={`scroll-hidden scroll-down ${headerAnim.isVisible ? 'scroll-visible' : ''}`}
+        >
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
             Work
           </p>
@@ -37,11 +43,14 @@ const Work = () => {
         </div>
 
         {/* container for projects */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div
+          ref={gridAnim.ref}
+          className="grid sm:grid-cols-2 md:grid-cols-4 gap-8"
+        >
           {project.map((item, index) => (
             <div
               key={index}
-              className="group rounded-xl overflow-hidden bg-[#112240] shadow-lg shadow-[#040c16] hover:scale-105 hover:shadow-cyan-500/20 hover:shadow-2xl transition-all duration-500 ease-out cursor-pointer"
+              className={`group rounded-xl overflow-hidden bg-[#112240] shadow-lg shadow-[#040c16] hover:scale-105 hover:shadow-cyan-500/20 hover:shadow-2xl transition-all duration-500 ease-out cursor-pointer scroll-hidden scroll-up scroll-delay-${index + 1} ${gridAnim.isVisible ? 'scroll-visible' : ''}`}
             >
               {/* Image */}
               <div className="relative overflow-hidden">

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { certificates } from '../data/data.js';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Certificates = () => {
     const [selectedId, setSelectedId] = useState(null);
+    const headerAnim = useScrollAnimation({ threshold: 0.3 });
+    const gridAnim = useScrollAnimation({ threshold: 0.1 });
 
     return (
         <div name='certificates' className='relative w-full min-h-screen bg-[#0B1120] text-gray-300 py-20'>
@@ -26,7 +29,10 @@ const Certificates = () => {
             </div>
 
             <div className='max-w-7xl mx-auto p-4 flex flex-col justify-center w-full h-full mt-7'>
-                <div className='text-center pb-8'>
+                <div
+                  ref={headerAnim.ref}
+                  className={`text-center pb-8 scroll-hidden scroll-down ${headerAnim.isVisible ? 'scroll-visible' : ''}`}
+                >
                     <p className='text-4xl font-bold inline border-b-4 border-cyan-400'>Certificates</p>
                     <p className='py-4'>A collection of my professional certifications.</p>
                 </div>
@@ -100,11 +106,14 @@ const Certificates = () => {
                     </div>
                 ) : (
                     /* Initial 4-Column Grid */
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                        {certificates.map((cert) => (
+                    <div
+                      ref={gridAnim.ref}
+                      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+                    >
+                        {certificates.map((cert, index) => (
                             <div
                                 key={cert.id}
-                                className="relative group bg-[#1a2238] rounded-2xl border border-cyan-500/20 shadow-lg shadow-black/50 overflow-hidden cursor-pointer aspect-square transition-all duration-500 hover:border-cyan-400 hover:shadow-cyan-500/10 transform hover:scale-[1.02]"
+                                className={`relative group bg-[#1a2238] rounded-2xl border border-cyan-500/20 shadow-lg shadow-black/50 overflow-hidden cursor-pointer aspect-square transition-all duration-500 hover:border-cyan-400 hover:shadow-cyan-500/10 transform hover:scale-[1.02] scroll-hidden scroll-up scroll-delay-${index + 1} ${gridAnim.isVisible ? 'scroll-visible' : ''}`}
                                 onClick={() => setSelectedId(cert.id)}
                             >
                                 <img

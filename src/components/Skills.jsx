@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
@@ -43,6 +44,8 @@ const SkillCard = ({ icon, name }) => (
 const Skills = () => {
   const firstRow = [...skills.slice(0, skills.length / 2), ...skills.slice(0, skills.length / 2)];
   const secondRow = [...skills.slice(skills.length / 2), ...skills.slice(skills.length / 2)];
+  const headerAnim = useScrollAnimation({ threshold: 0.3 });
+  const marqueeAnim = useScrollAnimation({ threshold: 0.2 });
 
   return (
     <div name='skills' className='w-full min-h-screen bg-[#0B1120] text-gray-300 relative overflow-hidden py-20'>
@@ -67,7 +70,10 @@ const Skills = () => {
 
       {/* Container */}
       <div className='max-w-7xl mx-auto p-4 flex flex-col justify-center w-full h-full mt-7'>
-          <div className='text-center'>
+          <div
+            ref={headerAnim.ref}
+            className={`text-center scroll-hidden scroll-down ${headerAnim.isVisible ? 'scroll-visible' : ''}`}
+          >
               <p className='text-4xl font-bold inline border-b-4 border-cyan-500 '>Skills</p>
               <p className='py-4 text-[#8892b0] max-w-3xl mx-auto'>
                 My skill set covers both front-end and back-end development, allowing me to build complete, 
@@ -75,7 +81,10 @@ const Skills = () => {
               </p>
           </div>
 
-          <div className='w-full flex flex-col items-center justify-center mt-8'>
+          <div
+            ref={marqueeAnim.ref}
+            className={`w-full flex flex-col items-center justify-center mt-8 scroll-hidden scroll-up scroll-delay-2 ${marqueeAnim.isVisible ? 'scroll-visible' : ''}`}
+          >
               <Marquee direction="left" speed={50} gradient={false} pauseOnHover={true}>
                   {firstRow.map(skill => <SkillCard key={skill.name} {...skill} />)}
               </Marquee>

@@ -2,8 +2,12 @@ import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import profile from '../assets/nawngnako.png';
 import { Link } from 'react-scroll';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Home = () => {
+  const textAnim = useScrollAnimation({ threshold: 0.2 });
+  const imgAnim = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <div name='home' className='w-full min-h-screen bg-[#0B1120] relative overflow-hidden flex items-center py-16 md:py-0'>
       
@@ -29,7 +33,10 @@ const Home = () => {
       {/* Container */}
       <div className='max-w-7xl mx-auto grid md:grid-cols-2 items-center w-full px-8 pt-24 md:pt-0'>
         {/* Text Content */}
-        <div className='flex flex-col justify-center order-2 md:order-1'>
+        <div
+          ref={textAnim.ref}
+          className={`flex flex-col justify-center order-2 md:order-1 scroll-hidden scroll-left ${textAnim.isVisible ? 'scroll-visible' : ''}`}
+        >
           <p className='text-cyan-500 text-lg'>Hi, my name is</p>
           <h1 className='text-3xl sm:text-5xl font-bold text-white whitespace-nowrap'>
             Reynaldo Jr. Domingo
@@ -43,17 +50,20 @@ const Home = () => {
           Skilled in both front-end and back-end development, I focus on creating clean, efficient, and user-friendly systems.
           </p>
           <div>
-            <Link to='work' smooth={true} duration={500} className='rounded-sm w-[30%] cursor-pointer text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500'>
+            <Link to='work' smooth={true} duration={500} className='rounded-sm w-fit cursor-pointer text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500'>
                 View Work
                 <span className='group-hover:rotate-90 duration-300'>
-                  <HiArrowNarrowRight className='ml-7 ' />
+                  <HiArrowNarrowRight className='ml-3 ' />
                 </span>
               </Link>
           </div>
         </div>
 
         {/* Image Content */}
-        <div className='flex justify-center items-center order-1 md:order-2 mb-8 md:mb-0'>
+        <div
+          ref={imgAnim.ref}
+          className={`flex justify-center items-center order-1 md:order-2 mb-8 md:mb-0 scroll-hidden scroll-right scroll-delay-2 ${imgAnim.isVisible ? 'scroll-visible' : ''}`}
+        >
           <div className='relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] '>
             <div className='w-full h-full bg-[#0B1120] rounded-full p-2'>
                 <img
