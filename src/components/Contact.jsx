@@ -40,7 +40,7 @@ const Contact = () => {
                 <div className='space-y-4'>
                     <a href="mailto:reyndoming@gmail.com" className='bg-[#11161D] border border-gray-800 p-4 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
                         <div className='flex items-center gap-4'>
-                            <div className='w-12 h-12 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
+                            <div className='w-10 h-10 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
                                 <FiMail className='text-gray-400 text-xl group-hover:text-white transition-colors' />
                             </div>
                             <div>
@@ -53,7 +53,7 @@ const Contact = () => {
 
                     <a href="tel:09104673672" className='bg-[#11161D] border border-gray-800 p-4 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
                         <div className='flex items-center gap-4'>
-                            <div className='w-12 h-12 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
+                            <div className='w-10 h-10 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
                                 <FiPhone className='text-gray-400 text-xl group-hover:text-white transition-colors' />
                             </div>
                             <div>
@@ -66,7 +66,7 @@ const Contact = () => {
 
                     <a href="https://www.google.com/maps/search/?api=1&query=Crosby+Street,+NY,+US" target="_blank" rel="noreferrer" className='bg-[#11161D] border border-gray-800 p-4 rounded-2xl flex items-center justify-between group cursor-pointer hover:bg-[#161B22] hover:border-gray-700 transition-all duration-300 shadow-lg shadow-black/20'>
                         <div className='flex items-center gap-4'>
-                            <div className='w-12 h-12 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
+                            <div className='w-10 h-10 bg-[#161B22] border border-gray-700 flex items-center justify-center rounded-xl group-hover:bg-[#1C2128] group-hover:border-gray-600 transition-all'>
                                 <FiMapPin className='text-gray-400 text-xl group-hover:text-white transition-colors' />
                             </div>
                             <div>
@@ -81,7 +81,7 @@ const Contact = () => {
 
             {/* Right side - Form */}
             <div className='md:w-1/2 w-full p-8 bg-[#11161D] border border-gray-800 rounded-3xl shadow-2xl shadow-black/40'>
-                <form action="https://formsubmit.co/reyndoming@gmail.com" method="POST" className='flex flex-col space-y-6'>
+                <form action="https://formsubmit.co/reyndoming@gmail.com" method="POST" className='flex flex-col space-y-4'>
                     {/* FormSubmit options */}
                     <input type="hidden" name="_subject" value="New Contact Form Submission!" />
                     <input type="hidden" name="_template" value="table" />

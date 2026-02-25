@@ -4,7 +4,7 @@ import profile from '../assets/nawngnako.png';
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen bg-[#0B1120] relative overflow-hidden'>
+    <div name='home' className='w-full min-h-screen bg-[#0B1120] relative overflow-hidden flex items-center py-16 md:py-0'>
       
       {/* Stars background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -26,11 +26,11 @@ const Home = () => {
       </div>
       
       {/* Container */}
-      <div className='max-w-7xl mx-auto grid md:grid-cols-2 items-center h-full'>
+      <div className='max-w-7xl mx-auto grid md:grid-cols-2 items-center w-full px-8 pt-24 md:pt-0'>
         {/* Text Content */}
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center order-2 md:order-1'>
           <p className='text-cyan-500 text-lg'>Hi, my name is</p>
-          <h1 className='text-3xl sm:text-5xl font-bold text-white'>
+          <h1 className='text-3xl sm:text-5xl font-bold text-white whitespace-nowrap'>
             Reynaldo Jr. Domingo
           </h1>
           <h2 className='text-3xl sm:text-5xl font-bold text-[#8892b0] flex items-center'>
@@ -52,8 +52,8 @@ const Home = () => {
         </div>
 
         {/* Image Content */}
-        <div className='flex justify-center items-center'>
-          <div className='relative w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] rounded-full p-1'>
+        <div className='flex justify-center items-center order-1 md:order-2 mb-8 md:mb-0'>
+          <div className='relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] '>
             <div className='w-full h-full bg-[#0B1120] rounded-full p-2'>
                 <img
                 src={profile}

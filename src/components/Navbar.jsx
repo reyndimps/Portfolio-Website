@@ -16,7 +16,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-10 bg-[#0B1120] text-gray-300 z-50'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0B1120] text-gray-300 z-50'>
       
       <a href='/' className='cursor-pointer'>
         <img src={Logo} alt='Logo' style={{ width: '110px' }}/>
@@ -45,6 +45,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link className='inline-block py-1 transition-all duration-300 hover:text-cyan-400 hover:-translate-y-0.5' to='certificates' smooth={true} duration={500}>
+            Certificates
+          </Link>
+        </li>
+             <li>
           <Link className='inline-block py-1 transition-all duration-300 hover:text-cyan-400 hover:-translate-y-0.5' to='contact' smooth={true} duration={500}>
             Contact
           </Link>
@@ -52,7 +57,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className='md:hidden px-4 z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -88,6 +93,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='py-6 text-2xl font-serif'>
+          {' '}
+          <Link onClick={handleClick} to='certificates' smooth={true} duration={500}>
+            Certificates
+          </Link>
+        </li>
+           <li className='py-6 text-2xl font-serif'>
           {' '}
           <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
             Contact

@@ -31,8 +31,8 @@ const Work = () => {
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
             Work
           </p>
-          <p className='py-6 text-[#8892b0] max-w-3xl'>
-            Here are some of the projects I have worked on, showcasing my skills in web development, problem-solving, and system design. Each project reflects my ability to create functional, responsive, and visually appealing applications while applying best practices in coding and user experience.
+          <p className='py-6 text-[#8892b0] max-w-2xl'>
+            Here are some of the projects I have worked on, showcasing my skills in web development, problem-solving, and system design. 
           </p>
         </div>
 
