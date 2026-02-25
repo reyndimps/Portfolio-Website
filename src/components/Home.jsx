@@ -1,6 +1,7 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import profile from '../assets/nawngnako.png';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -42,12 +43,14 @@ const Home = () => {
           Skilled in both front-end and back-end development, I focus on creating clean, efficient, and user-friendly systems.
           </p>
           <div>
-            <button className='rounded-sm text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500'>
-              View Work
-              <span className='group-hover:rotate-90 duration-300'>
-                <HiArrowNarrowRight className='ml-3 ' />
-              </span>
-            </button>
+            <Link to='work' smooth={true} duration={500}>
+              <button className='rounded-sm text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500'>
+                View Work
+                <span className='group-hover:rotate-90 duration-300'>
+                  <HiArrowNarrowRight className='ml-3 ' />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
 

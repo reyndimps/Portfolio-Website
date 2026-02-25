@@ -25,7 +25,7 @@ const Certificates = () => {
                 ))}
             </div>
 
-            <div className='max-w-7xl mx-auto p-4 flex flex-col justify-center w-full h-full'>
+            <div className='max-w-7xl mx-auto p-4 flex flex-col justify-center w-full h-full mt-7'>
                 <div className='text-center pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-cyan-400'>Certificates</p>
                     <p className='py-4'>A collection of my professional certifications.</p>
