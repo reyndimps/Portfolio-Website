@@ -70,10 +70,10 @@ const About = () => {
                       className="relative w-80 h-80 mx-auto opacity-0" 
                       style={fadeInStyle}
                     >
-                      <div className='absolute -top-24 left-0 lg:-left-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform lg:-rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
+                      <div className='absolute -top-32 -left-10 lg:-left-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform lg:-rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
                         <img src={About2} alt="Reynaldo Domingo" className="w-full h-full object-cover rounded-2xl"/>
                       </div>
-                      <div className='absolute -bottom-24 right-0 lg:-right-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform lg:rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
+                      <div className='absolute -bottom-32 -right-10 lg:-right-24 w-52 h-52 sm:w-60 sm:h-60 bg-[#1a2238] border-2 border-cyan-500/50 rounded-2xl shadow-xl transform lg:rotate-12 transition-all duration-500 ease-out hover:rotate-0 hover:scale-105 hover:z-20 cursor-pointer group' onClick={toggleImageView}>
                         <img src={About3} alt="Reynaldo Domingo" className="w-full h-full object-cover rounded-2xl"/>
                       </div>
                       <div className='absolute top-1/2 left-1/2 w-64 h-64 transform -translate-x-1/2 -translate-y-1/2 bg-[#1a2238] border-2 border-cyan-500 rounded-2xl shadow-2xl shadow-cyan-500/20 z-10 transition-all duration-500 ease-out hover:scale-110 cursor-pointer group' onClick={toggleImageView}>
@@ -105,9 +105,9 @@ const About = () => {
                   </div>
 
                   <div className='text-md'>
-                    <p className='text-[#8892b0] leading-relaxed'>I am a dedicated and passionate web developer with a strong interest in building modern, responsive, and user-friendly web applications. As an IT student, I have developed both front-end and back-end skills through academic projects and personal practice. I enjoy turning ideas into real, functional systems that solve problems and improve user experience.</p>  
+                    <p className='text-[#8892b0] leading-relaxed text-justify'>I am a dedicated and passionate web developer with a strong interest in building modern, responsive, and user-friendly web applications. As an IT student, I have developed both front-end and back-end skills through academic projects and personal practice. I enjoy turning ideas into real, functional systems that solve problems and improve user experience.</p>  
                     <br />
-                    <p className='text-[#8892b0] leading-relaxed'>My goal is to create software that is not only functional but also provides a great user experience. I am always eager to learn new technologies and improve my skills to keep up with the latest industry trends. I am a problem-solver, a team player, and I am excited to contribute to challenging projects.</p>
+                    <p className='text-[#8892b0] leading-relaxed text-justify'>My goal is to create software that is not only functional but also provides a great user experience. I am always eager to learn new technologies and improve my skills to keep up with the latest industry trends. I am a problem-solver, a team player, and I am excited to contribute to challenging projects.</p>
                   </div>
                   
                 </div>

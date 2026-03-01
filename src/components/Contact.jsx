@@ -39,7 +39,7 @@ const Contact = () => {
                       Contact
                     </p>
                     <h2 className='text-5xl md:text-6xl lg:text-7xl font-bold text-cyan-500 mb-4 tracking-tight'>Get in <span className='text-gray-500'>touch</span></h2>
-                    <p className='text-gray-400 text-lg max-w-[480px] leading-relaxed'>
+                    <p className='text-gray-400 text-lg max-w-[480px] leading-relaxed text-justify'>
                         Have questions or inquiries? I'm here to help! Whether you want to discuss a project, collaborate, or just say hello, feel free to reach out.
                     </p>
                 </div>

@@ -75,7 +75,7 @@ const Skills = () => {
             className={`text-center scroll-hidden scroll-down ${headerAnim.isVisible ? 'scroll-visible' : ''}`}
           >
               <p className='text-4xl font-bold inline border-b-4 border-cyan-500 '>Skills</p>
-              <p className='py-4 text-[#8892b0] max-w-3xl mx-auto'>
+              <p className='py-4 text-[#8892b0] max-w-3xl mx-auto text-justify'>
                 My skill set covers both front-end and back-end development, allowing me to build complete, 
                 responsive, and user-friendly applications. 
               </p>
