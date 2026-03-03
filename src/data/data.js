@@ -7,11 +7,15 @@ import CybersecurityPic from '../assets/certificates/cybersecurity.jpg';
 import HtmlCssPic from '../assets/certificates/html-css.jpg';
 import DatabasePic from '../assets/certificates/database.jpg';
 import NetworkSecurityPic from '../assets/certificates/network-security.jpg';
+import PythonPic from '../assets/certificates/python-certificate.jpg';
+import LinuxPic from '../assets/certificates/linux-certificate.jpg';
 
 import Cybersecurity from '../assets/certificates/cybersecurity-certificate.pdf';
 import HtmlCss from '../assets/certificates/html-css-certificate.pdf';
 import Database from '../assets/certificates/database-certificate.pdf';
 import NetworkSecurity from '../assets/certificates/network-security-certificate.pdf';
+import Python from '../assets/certificates/python-certificate.pdf';
+import Linux from '../assets/certificates/linux-certificate.pdf';
 
 export const data=[
     {
@@ -72,5 +76,19 @@ export const certificates = [
         image: NetworkSecurityPic,
         description: 'This certification highlights my abilities in network security, including configuring firewalls, implementing VPNs, and monitoring network traffic. I can protect network infrastructure from unauthorized access and threats.',
         download: NetworkSecurity,
+    },
+    {
+        id: 5,
+        name: 'Python For Beginners Hands-On Labs',
+        image: PythonPic,
+        description: 'Successfully completed the Python for Beginners with Hands-On Labs on August 28, 2025.',
+        download: Python,
+    },
+    {
+        id: 6,
+        name: 'Linux For Beginners Hands-On Labs',
+        image: LinuxPic,
+        description: 'Successfully completed the Linux for Beginners with Hands-On Labs on August 28, 2025.',
+        download: Linux,
     },
 ];
