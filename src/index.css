@@ -75,15 +75,15 @@
     width: 0;
     /* steps(14) makes it look like it's being typed character by character */
     animation: 
-        typing 3.5s steps(14, end) infinite, 
+        typing 3.5s steps(26, end) infinite, 
         blink 0.8s infinite;
 }
 
 /* Controls the typing and deleting cycle */
 @keyframes typing {
     0% { width: 0 }               /* Start empty */
-    50% { width: 13ch }           /* Type out (14ch = 14 characters wide) */
-    70% { width: 13ch }           /* Stay typed out (pause) */
+    50% { width: 26ch }           /* Type out */
+    70% { width: 26ch }           /* Stay typed out (pause) */
     100% { width: 0 }             /* Delete back to empty */
 }
 
