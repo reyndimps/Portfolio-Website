@@ -105,7 +105,7 @@ const About = () => {
                   </div>
 
                   <div className='text-md'>
-                    <p className='text-[#8892b0] leading-relaxed text-justify'>I am a dedicated and passionate web developer with a strong interest in building modern, responsive, and user-friendly web applications. As an IT student, I have developed both front-end and back-end skills through academic projects and personal practice. I enjoy turning ideas into real, functional systems that solve problems and improve user experience.</p>  
+                    <p className='text-[#8892b0] leading-relaxed text-justify'>I am a dedicated and passionate web developer with a strong interest in building modern, responsive, and user-friendly web applications. I have developed both front-end and back-end skills through academic projects and personal practice. I enjoy turning ideas into real, functional systems that solve problems and improve user experience.</p>  
                     <br />
                     <p className='text-[#8892b0] leading-relaxed text-justify'>My goal is to create software that is not only functional but also provides a great user experience. I am always eager to learn new technologies and improve my skills to keep up with the latest industry trends. I am a problem-solver, a team player, and I am excited to contribute to challenging projects.</p>
                   </div>

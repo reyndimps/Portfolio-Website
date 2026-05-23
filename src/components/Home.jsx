@@ -43,7 +43,7 @@ const Home = () => {
           </h1>
           <h2 className='text-3xl sm:text-5xl font-bold text-[#8892b0] flex items-center'>
             <span className='whitespace-pre'>I'm a </span>
-            <span className='typing'>Web Developer.</span>
+            <span className='typing'>Full Stack Developer.</span>
           </h2>
           <p className='text-[#8892b0] py-4 text-lg max-w-[600px] text-justify'>
                                   I’m a passionate web developer who enjoys turning ideas into functional and visually appealing digital experiences.
