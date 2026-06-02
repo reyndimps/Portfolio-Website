@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { FiArrowUpRight, FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
 import useScrollAnimation from '../hooks/useScrollAnimation'
 
 const Contact = () => {
   const leftAnim = useScrollAnimation({ threshold: 0.15, once: false });
   const rightAnim = useScrollAnimation({ threshold: 0.15, once: false });
+  const formRef = useRef();
+  const [status, setStatus] = useState('idle');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    emailjs.sendForm(
+      'service_1p5onuc',
+      'template_89gy62b',  
+      formRef.current,
+      'Didy7VWAdkdtSj55P'
+    ).then(() => {
+      setStatus('success');
+      formRef.current.reset();
+    }).catch(() => {
+      setStatus('error');
+    });
+  };
 
   return (
     <div name='contact' className='w-full min-h-fit bg-[#0B1120] flex justify-center items-center px-4 py-16 md:py-24 relative overflow-hidden'>
@@ -91,26 +111,39 @@ const Contact = () => {
               ref={rightAnim.ref}
               className={`lg:w-1/2 w-full p-10 md:p-12 bg-[#11161D]/80 backdrop-blur-md border border-gray-800 rounded-[2rem] shadow-2xl shadow-black/40 scroll-hidden scroll-right scroll-delay-2 ${rightAnim.isVisible ? 'scroll-visible' : ''}`}
             >
-                <form action="https://formsubmit.co/reyndoming@gmail.com" method="POST" className='flex flex-col space-y-6'>
-                    {/* FormSubmit options */}
-                    <input type="hidden" name="_subject" value="New Contact Form Submission!" />
-                    <input type="hidden" name="_template" value="table" />
-                    <input type="hidden" name="_captcha" value="false" />
-
+                <form ref={formRef} onSubmit={handleSubmit} className='flex flex-col space-y-6'>
+                    
                     <div className='flex flex-col'>
                         <label className='text-gray-400 text-sm font-bold uppercase tracking-[0.2em] mb-2 ml-1'>Name</label>
-                        <input className='bg-transparent border border-gray-800/80 p-4 rounded-xl text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition-all duration-300 placeholder:text-gray-700' type="text" name='name' placeholder='Your name' required />
+                        <input className='bg-transparent border border-gray-800/80 p-4 rounded-xl text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition-all duration-300 placeholder:text-gray-700' 
+                        type="text" name='from_name' placeholder='Your name' required />
                     </div>
+
                     <div className='flex flex-col'>
                         <label className='text-gray-400 text-sm font-bold uppercase tracking-[0.2em] mb-2 ml-1'>Email</label>
-                        <input className='bg-transparent border border-gray-800/80 p-4 rounded-xl text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition-all duration-300 placeholder:text-gray-700' type="email" name='email' placeholder='email@example.com' required />
+                        <input className='bg-transparent border border-gray-800/80 p-4 rounded-xl text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition-all duration-300 placeholder:text-gray-700' 
+                        type="email" name='from_email' placeholder='email@example.com' required />
                     </div>
+
                     <div className='flex flex-col'>
                         <label className='text-gray-400 text-sm font-bold uppercase tracking-[0.2em] mb-2 ml-1'>Message</label>
-                        <textarea className='bg-transparent border border-gray-800/80 p-4 rounded-xl text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition-all duration-300 resize-none placeholder:text-gray-700' name="message" rows="4" placeholder='What do you have in mind?' required></textarea>
+                        <textarea className='bg-transparent border border-gray-800/80 p-4 rounded-xl text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/20 transition-all duration-300 resize-none placeholder:text-gray-700' 
+                        name="message" rows="4" placeholder='What do you have in mind?' required></textarea>
                     </div>
-                    <button type="submit" className='w-full bg-white text-black font-extrabold py-4 rounded-xl hover:bg-cyan-50 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 ease-out active:scale-[0.98] shadow-lg shadow-white/5'>Submit Message</button>
-                </form>
+
+                    <button type="submit" disabled={status === 'sending'}
+                        className='w-full bg-white text-black font-extrabold py-4 rounded-xl hover:bg-cyan-50 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 ease-out active:scale-[0.98] shadow-lg shadow-white/5 disabled:opacity-60 disabled:cursor-not-allowed'>
+                        {status === 'sending' ? 'Sending...' : 'Submit Message'}
+                    </button>
+
+                    {status === 'success' && (
+                        <p className='text-cyan-400 text-center text-sm font-medium'>✓ Message sent! I'll get back to you soon.</p>
+                    )}
+                    {status === 'error' && (
+                        <p className='text-red-400 text-center text-sm font-medium'>✗ Something went wrong. Please try again.</p>
+                    )}
+
+                    </form>
             </div>
         </div>
     </div>
