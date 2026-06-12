@@ -105,9 +105,9 @@ const About = () => {
                   </div>
 
                   <div className='text-md'>
-                    <p className='text-[#8892b0] leading-relaxed text-justify'>I am a dedicated and passionate web developer with a strong interest in building modern, responsive, and user-friendly web applications. I have developed both front-end and back-end skills through academic projects and personal practice. I enjoy turning ideas into real, functional systems that solve problems and improve user experience.</p>  
+                    <p className='text-[#8892b0] leading-relaxed text-justify'>I'm a dedicated software developer with hands-on experience building enterprise-grade web applications. During my internship at Aquila Software Corporation, I built real production modules for a client-facing accounting system — covering general ledger, inventory, payroll, and trial balance.</p>  
                     <br />
-                    <p className='text-[#8892b0] leading-relaxed text-justify'>My goal is to create software that is not only functional but also provides a great user experience. I am always eager to learn new technologies and improve my skills to keep up with the latest industry trends. I am a problem-solver, a team player, and I am excited to contribute to challenging projects.</p>
+                    <p className='text-[#8892b0] leading-relaxed text-justify'>I follow clean architecture principles and enjoy solving complex, real-world problems through well-structured code. I've worked in agile environments, collaborated with senior developers, and delivered features across multiple sprint cycles. I'm always pushing to improve my craft and contribute meaningfully to the teams I work with.</p>
                   </div>
                   
                 </div>

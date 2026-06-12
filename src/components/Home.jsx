@@ -31,23 +31,22 @@ const Home = () => {
       </div>
       
       {/* Container */}
-      <div className='max-w-7xl mx-auto grid md:grid-cols-2 items-center w-full px-4 pt-24 md:pt-0'>
+      <div className='max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center w-full px-4 pt-24 md:pt-0'>
         {/* Text Content */}
         <div
           ref={textAnim.ref}
           className={`flex flex-col justify-center order-2 md:order-1 scroll-hidden scroll-left ${textAnim.isVisible ? 'scroll-visible' : ''}`}
         >
           <p className='text-cyan-500 text-lg'>Hi, my name is</p>
-          <h1 className='text-3xl sm:text-5xl font-bold text-white whitespace-nowrap'>
-            Reynaldo Jr. Domingo
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white break-words'>
+            Reynaldo Jr. N. Domingo
           </h1>
-          <h2 className='text-3xl sm:text-5xl font-bold text-[#8892b0] flex items-center'>
+          <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-[#8892b0] flex items-center'>
             <span className='whitespace-pre'>I'm a </span>
-            <span className='typing'>Full Stack Developer.</span>
+            <span className='typing'>Software Developer.</span>
           </h2>
-          <p className='text-[#8892b0] py-4 text-lg max-w-[600px] text-justify'>
-                                  I’m a passionate web developer who enjoys turning ideas into functional and visually appealing digital experiences.
-          Skilled in both front-end and back-end development, I focus on creating clean, efficient, and user-friendly systems.
+          <p className='text-[#8892b0] py-4 text-base sm:text-lg max-w-[600px] text-justify break-words'>
+            I'm a software developer with hands-on experience building full-stack and backend web applications. I focus on writing clean, maintainable code and delivering reliable systems that solve real business problems.
           </p>
           <div>
             <Link to='work' smooth={true} duration={500} className='rounded-sm w-fit cursor-pointer text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500'>

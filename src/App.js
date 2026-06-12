@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Copyright from "./components/Copyright";
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Experience />
       <Skills />
       <Work />
       <Certificates />

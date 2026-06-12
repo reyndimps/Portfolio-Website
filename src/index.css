@@ -82,8 +82,8 @@
 /* Controls the typing and deleting cycle */
 @keyframes typing {
     0% { width: 0 }               /* Start empty */
-    50% { width: 26ch }           /* Type out */
-    70% { width: 26ch }           /* Stay typed out (pause) */
+    50% { width: 16ch }           /* Type out */
+    70% { width: 16ch }           /* Stay typed out (pause) */
     100% { width: 0 }             /* Delete back to empty */
 }
 

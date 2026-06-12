@@ -16,6 +16,7 @@ import SSQL from '../assets/ssql.png';
 import NODEJS from '../assets/nodejs.png';
 import Python from '../assets/Python.png';
 import Java from '../assets/Java.png';
+import PostgreSQL from '../assets/postgresql.png';
 
 const skills = [
     { name: 'HTML', icon: HTML },
@@ -32,6 +33,7 @@ const skills = [
     { name: 'NODE.JS', icon: NODEJS },
     { name: 'PYTHON', icon: Python },
     { name: 'JAVA', icon: Java },
+    { name: 'POSTGRESQL', icon: PostgreSQL },
 ];  
 
 const SkillCard = ({ icon, name }) => (
