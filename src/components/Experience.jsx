@@ -3,7 +3,7 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const experiences = [
   {
-    role: "Backend Software Engineer Intern",
+    role: "Backend Software Developer Intern",
     company: "Aquila Software Corporation",
     date: "Feb 2026 – May 2026",
     type: "Internship",
