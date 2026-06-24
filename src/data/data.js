@@ -9,6 +9,8 @@ import DatabasePic from '../assets/certificates/database.jpg';
 import NetworkSecurityPic from '../assets/certificates/network-security.jpg';
 import PythonPic from '../assets/certificates/python-certificate.jpg';
 import LinuxPic from '../assets/certificates/linux-certificate.jpg';
+import GithubPic from '../assets/certificates/github-certificate.jpg';
+import JavascriptPic from '../assets/certificates/javascript-certificate.jpg';
 
 import Cybersecurity from '../assets/certificates/cybersecurity-certificate.pdf';
 import HtmlCss from '../assets/certificates/html-css-certificate.pdf';
@@ -16,6 +18,8 @@ import Database from '../assets/certificates/database-certificate.pdf';
 import NetworkSecurity from '../assets/certificates/network-security-certificate.pdf';
 import Python from '../assets/certificates/python-certificate.pdf';
 import Linux from '../assets/certificates/linux-certificate.pdf';
+import Github from '../assets/certificates/github-certificate.pdf';
+import Javascript from '../assets/certificates/javascript-certificate.pdf';
 
 export const data=[
     {
@@ -47,7 +51,6 @@ export const data=[
         description:"A transportation management and booking system designed to simplify vehicle scheduling and route management.",
     },
 ]
-
 export const certificates = [
     {
         id: 1,
@@ -58,37 +61,51 @@ export const certificates = [
     },
     {
         id: 2,
+        name: 'JavaScript Workshop',
+        image: JavascriptPic,
+        description: 'Successfully completed the JavaScript Workshop conducted by the College of Computing Education Skills Clinic - Mentors on February 24, 2026, held at E-Resources LIC, University of Mindanao, Davao City.',
+        download: Javascript,
+    },
+    {
+        id: 3,
         name: 'IT Specialist in HTML and CSS',
         image: HtmlCssPic,
         description: 'This certification showcases my expertise in front-end web development, specifically in creating and styling web pages using HTML5 and CSS3. I can build responsive, visually appealing, and accessible user interfaces.',
         download: HtmlCss,
     },
     {
-        id: 3,
-        name: 'IT Specialist in Databases',
-        image: DatabasePic,
-        description: 'This certification confirms my knowledge of database design, management, and implementation. I am skilled in working with various SQL and NoSQL databases to store, retrieve, and manage data efficiently and securely.',
-        download: Database,
-    },
-    {
         id: 4,
-        name: 'IT Specialist in Network Security',
-        image: NetworkSecurityPic,
-        description: 'This certification highlights my abilities in network security, including configuring firewalls, implementing VPNs, and monitoring network traffic. I can protect network infrastructure from unauthorized access and threats.',
-        download: NetworkSecurity,
-    },
-    {
-        id: 5,
         name: 'Python For Beginners Hands-On Labs',
         image: PythonPic,
         description: 'Successfully completed the Python for Beginners with Hands-On Labs on August 28, 2025.',
         download: Python,
     },
     {
-        id: 6,
+        id: 5,
         name: 'Linux For Beginners Hands-On Labs',
         image: LinuxPic,
         description: 'Successfully completed the Linux for Beginners with Hands-On Labs on August 28, 2025.',
         download: Linux,
+    },
+    {
+        id: 6,
+        name: 'IT Specialist in Databases',
+        image: DatabasePic,
+        description: 'This certification confirms my knowledge of database design, management, and implementation. I am skilled in working with various SQL and NoSQL databases to store, retrieve, and manage data efficiently and securely.',
+        download: Database,
+    },
+    {
+        id: 7,
+        name: 'GitHub Workshop',
+        image: GithubPic,
+        description: 'Successfully completed the GitHub Workshop conducted by the College of Computing Education Skills Clinic - Mentors on February 24, 2026, held at E-Resources LIC, University of Mindanao, Davao City.',
+        download: Github,
+    },
+    {
+        id: 8,
+        name: 'IT Specialist in Network Security',
+        image: NetworkSecurityPic,
+        description: 'This certification highlights my abilities in network security, including configuring firewalls, implementing VPNs, and monitoring network traffic. I can protect network infrastructure from unauthorized access and threats.',
+        download: NetworkSecurity,
     },
 ];
