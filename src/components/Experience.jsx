@@ -3,11 +3,11 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const experiences = [
   {
-    role: "Backend Software Developer Intern",
+    role: "Full Stack Developer Intern",
     company: "Aquila Software Corporation",
     date: "Feb 2026 – May 2026",
     type: "Internship",
-    desc: "Built and maintained backend modules using C# ASP.NET Web API and PostgreSQL, following clean architecture with CQRS patterns. Delivered financial features including general ledger, inventory management, and trial balance reporting while collaborating with senior developers across agile sprint cycles.",
+    desc: "Built and maintained full stack modules for a client-facing accounting system using React, Next.js, TypeScript, and Tailwind CSS on the frontend, and C# ASP.NET Web API with PostgreSQL on the backend, following clean architecture with CQRS patterns. Delivered features including general ledger, inventory management, and trial balance reporting while collaborating with senior developers across agile sprint cycles.",
     isWork: true,
   },
   {
@@ -15,7 +15,7 @@ const experiences = [
     company: "University of Mindanao — Capstone",
     date: "Aug 2025 – Feb 2026",
     type: "Academic",
-    desc: "Developed Efres Seedlings, a full-stack agricultural management platform for a real-world client using Laravel, MySQL, and Tailwind CSS. Integrated a machine learning module for predictive crop yield insights and designed Figma-based dashboards for crop tracking, seedling inventory, and sales monitoring.",
+    desc: "Developed Efres Seedlings, a full stack agricultural management platform for a real-world client using Laravel, MySQL, and Tailwind CSS. Integrated a machine learning module for predictive crop yield insights and designed Figma-based dashboards for crop tracking, seedling inventory, and sales monitoring.",
     isWork: false,
   },
 ];
@@ -58,7 +58,7 @@ const Experience = () => {
           {/* Mobile: left line */}
           <div className='sm:hidden absolute left-4 top-0 bottom-0 w-px bg-cyan-500/25' />
 
-          <div className='space-y-10 sm:space-y-14'>
+          <div className='space-y-10 sm:space-y-14 text-justify'>
             {experiences.map((exp, index) => (
               <ExperienceItem key={index} exp={exp} index={index} />
             ))}

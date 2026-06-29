@@ -105,7 +105,7 @@ const About = () => {
                   </div>
 
                   <div className='text-md'>
-                    <p className='text-[#8892b0] leading-relaxed text-justify'>I'm a dedicated software developer with hands-on experience building enterprise-grade web applications. During my internship at Aquila Software Corporation, I built real production modules for a client-facing accounting system — covering general ledger, inventory, payroll, and trial balance.</p>  
+                    <p className='text-[#8892b0] leading-relaxed text-justify'>I'm a dedicated full stack developer with hands-on experience building enterprise-grade web applications. During my internship at Aquila Software Corporation, I built real production modules for a client-facing accounting system using React, Next.js, TypeScript, and Tailwind CSS on the frontend, and C# ASP.NET Web API with PostgreSQL on the backend.</p>  
                     <br />
                     <p className='text-[#8892b0] leading-relaxed text-justify'>I follow clean architecture principles and enjoy solving complex, real-world problems through well-structured code. I've worked in agile environments, collaborated with senior developers, and delivered features across multiple sprint cycles. I'm always pushing to improve my craft and contribute meaningfully to the teams I work with.</p>
                   </div>

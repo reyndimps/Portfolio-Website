@@ -43,10 +43,10 @@ const Home = () => {
           </h1>
           <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-[#8892b0] flex items-center'>
             <span className='whitespace-pre'>I'm a </span>
-            <span className='typing'>Software Developer.</span>
+            <span className='typing'>Full Stack Developer.</span>
           </h2>
           <p className='text-[#8892b0] py-4 text-base sm:text-lg max-w-[600px] text-justify break-words'>
-            I'm a software developer with hands-on experience building full-stack and backend web applications. I focus on writing clean, maintainable code and delivering reliable systems that solve real business problems.
+            Hands-on experience building and delivering web applications using modern frontend and backend technologies. I focus on writing clean, maintainable code and creating reliable systems that solve real business problems.
           </p>
           <div>
             <Link to='work' smooth={true} duration={500} className='rounded-sm w-fit cursor-pointer text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500'>
